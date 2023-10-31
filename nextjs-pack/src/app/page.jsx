@@ -18,7 +18,7 @@ export default function Home() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 children:p-6 children:rounded-md children:bg-gray-100 dark:children:bg-gray-900 children:border children:border-gray-200 dark:children:border-gray-800 text-gray-800 dark:text-gray-200">
                 {
                   blockGroup.items.map(item => (
-                    <Link key={item.id} href={item.link}>
+                    <Link key={item.id} href={`/blocks/${item.link}`}>
                       {item.title}
                     </Link>
                   ))
