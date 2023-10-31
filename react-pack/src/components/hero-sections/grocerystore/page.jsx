@@ -73,7 +73,7 @@ const Navbar = () => {
                                 </svg>
                             </a>
                             <div className="flex">
-                                <button onClick={()=>{toggleNavbar()}} aria-label="Toggle navbar" className="outline-none border-l border-l-emerald-100 dark:border-l-gray-800 pl-3 relative py-3 children:flex">
+                                <button onClick={() => { toggleNavbar() }} aria-label="Toggle navbar" className="outline-none border-l border-l-emerald-100 dark:border-l-gray-800 pl-3 relative py-3 children:flex">
                                     <span aria-hidden="true" className={`
                                         h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300
                                         ${openNavbar ? "rotate-45 translate-y-[0.33rem]" : ""}
@@ -91,6 +91,81 @@ const Navbar = () => {
         </>
     )
 }
+
+const FeatureItem = ({ text }) => {
+    return (
+        <div className="text-gray-700 dark:text-gray-300 flex gap-x-3">
+            <span className="w-7 h-7 max-h-7 min-w-[1.75rem] bg-emerald-100 dark:bg-gray-900 dark:text-gray-300 text-emerald-600 rounded-md flex items-center justify-center">
+                ✓
+            </span>
+            {text}
+        </div>
+    )
+}
+
+const CategoryCard = ({ icon, title, description }) => {
+    return (
+        <div className="space-y-2 sm:p-4 sm:rounded-md sm:bg-emerald-200/10 sm:dark:bg-gray-800/10">
+            <img src={icon} alt="icon category" width={96} height={96} className="w-14 h-14 md:w-20 md:h-20" />
+            <h2 className="font-semibold text-gray-800 dark:text-gray-200">{title}</h2>
+            <p className="text-gray-700 dark:text-gray-300">
+                {description}.
+            </p>
+        </div>
+    )
+}
+
+const features = [
+    {
+        id: 1,
+        text: "Feature 1"
+    },
+    {
+        id: 2,
+        text: "Feature 2"
+    },
+    {
+        id: 3,
+        text: "Feature 3"
+    },
+    {
+        id: 4,
+        text: "Feature 4"
+    },
+]
+
+const categories = [
+    {
+        id: 1,
+        icon: "/images/icons/fruit-icon.svg",
+        title: "Product Category",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        id: 2,
+        icon: "/images/icons/fruit-icon.svg",
+        title: "Product Category",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        id: 3,
+        icon: "/images/icons/fruit-icon.svg",
+        title: "Product Category",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        id: 4,
+        icon: "/images/icons/fruit-icon.svg",
+        title: "Product Category",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        id: 5,
+        icon: "/images/icons/fruit-icon.svg",
+        title: "Product Category",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+]
 
 export default function HeroSection() {
     return (
@@ -116,30 +191,11 @@ export default function HeroSection() {
                             </form>
                         </div>
                         <div className="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-4">
-                            <div className="text-gray-700 dark:text-gray-300 flex gap-x-3">
-                                <span className="w-7 h-7 max-h-7 min-w-[1.75rem] bg-emerald-100 dark:bg-gray-900 dark:text-gray-300 text-emerald-600 rounded-md flex items-center justify-center">
-                                    ✓
-                                </span>
-                                Fresh Vegetables
-                            </div>
-                            <div className="text-gray-700 dark:text-gray-300 flex gap-x-3">
-                                <span className="w-7 h-7 max-h-7 min-w-[1.75rem] bg-emerald-100 dark:bg-gray-900 dark:text-gray-300 text-emerald-600 rounded-md flex items-center justify-center">
-                                    ✓
-                                </span>
-                                100% Guarantee
-                            </div>
-                            <div className="text-gray-700 dark:text-gray-300 flex gap-x-3">
-                                <span className="w-7 h-7 max-h-7 min-w-[1.75rem] bg-emerald-100 dark:bg-gray-900 dark:text-gray-300 text-emerald-600 rounded-md flex items-center justify-center">
-                                    ✓
-                                </span>
-                                Cash on Delivery
-                            </div>
-                            <div className="text-gray-700 dark:text-gray-300 flex gap-x-3">
-                                <span className="w-7 h-7 max-h-7 min-w-[1.75rem] bg-emerald-100 dark:bg-gray-900 dark:text-gray-300 text-emerald-600 rounded-md flex items-center justify-center">
-                                    ✓
-                                </span>
-                                Fast Delivery
-                            </div>
+                            {
+                                features.map(feature=>(
+                                    <FeatureItem key={feature.id} {...feature}/>
+                                ))
+                            }
                         </div>
                     </div>
                     <div className="flex flex-1 relative lg:h-auto">
@@ -150,42 +206,12 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className="mx-auto lg:max-w-7xl bg-emerald-100 dark:bg-gray-900 rounded-md w-full p-5 sm:p-10 md:p-12 lg:p-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
-                    <div className="space-y-2 sm:p-4 sm:rounded-md sm:bg-emerald-200/10 sm:dark:bg-gray-800/10">
-                        <img src="/images/icons/Dairy.png" alt="icon food" width={96} height={96} className="w-14 h-14 md:w-20 md:h-20" />
-                        <h2 className="font-semibold text-gray-800 dark:text-gray-200">Dairy Products</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                    </div>
-                    <div className="space-y-2 sm:p-4 sm:rounded-md sm:bg-emerald-200/10 sm:dark:bg-gray-800/10">
-                        <img src="/images/icons/Fruitsandvegetables.png" alt="icon food" width={96} height={96} className="w-14 h-14 md:w-20 md:h-20" />
-                        <h2 className="font-semibold text-gray-800 dark:text-gray-200">Vegetables &amp; Fruits</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                    </div>
-                    <div className="space-y-2 sm:p-4 sm:rounded-md sm:bg-emerald-200/10 sm:dark:bg-gray-800/10">
-                        <img src="/images/icons/Condiments.png" alt="icon food" width={96} height={96} className="w-14 h-14 md:w-20 md:h-20" />
-                        <h2 className="font-semibold text-gray-800 dark:text-gray-200">Spices &amp; Seasonings</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                    </div>
-                    <div className="space-y-2 sm:p-4 sm:rounded-md sm:bg-emerald-200/10 sm:dark:bg-gray-800/10">
-                        <img src="/images/icons/Babyfood.png" alt="icon food" width={96} height={96} className="w-14 h-14 md:w-20 md:h-20" />
-                        <h2 className="font-semibold text-gray-800 dark:text-gray-200">Honey</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                    </div>
-                    <div className="space-y-2 sm:p-4 sm:rounded-md sm:bg-emerald-200/10 sm:dark:bg-gray-800/10">
-                        <img src="/images/icons/Grainandpasta.png" alt="icon food" width={96} height={96} className="w-14 h-14 md:w-20 md:h-20" />
-                        <h2 className="font-semibold text-gray-800 dark:text-gray-200">Flour</h2>
-                        <p className="text-gray-700 dark:text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                    </div>
+                <div className="mx-auto lg:max-w-7xl bg-emerald-100 dark:bg-gray-900 rounded-md w-full p-5 sm:p-10 md:p-12 lg:p-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 relative">
+                    {
+                        categories.map(category=>(
+                            <CategoryCard key={category.id} {...category}/>
+                        ))
+                    }
                     <div className="space-y-2 p-4 rounded-md bg-emerald-200/10 dark:bg-gray-800/10 border flex flex-col items-center justify-center border-emerald-100 dark:border-gray-800 lg:hidden">
                         <button className="rounded-full border border-dashed border-emerald-300 dark:border-gray-800 text-emerald-600 p-3">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
