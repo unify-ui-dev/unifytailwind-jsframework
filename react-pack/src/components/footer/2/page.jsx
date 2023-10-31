@@ -1,4 +1,3 @@
-import "./component.css"
 
 const FooterItem = ({ text, link }) => {
     return (

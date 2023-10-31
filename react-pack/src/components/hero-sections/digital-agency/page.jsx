@@ -1,14 +1,10 @@
 import { useState } from 'react'
-import "./component.css"
-
 
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
     }
-
     const closeNavbar = () => {
         setOpenNavbar(false)
     }

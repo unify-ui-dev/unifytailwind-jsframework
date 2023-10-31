@@ -1,7 +1,5 @@
 "use client"
-
 import { useState } from 'react'
-
 
 const navItems = [
     {
@@ -41,11 +39,8 @@ const navItems = [
         isActive: false,
     },
 ]
-
 const Sidebar = () => {
-
     const [sidebarToggled, setSidebarToggled] = useState(false)
-
     const toggleSidebar = () => {
         setSidebarToggled(sidebarToggled => !sidebarToggled)
     }
@@ -122,5 +117,4 @@ const Sidebar = () => {
         </>
     )
 }
-
 export default Sidebar

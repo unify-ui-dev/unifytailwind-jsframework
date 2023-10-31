@@ -1,8 +1,6 @@
 "use client"
-
 import Link from 'next/link'
 import { useState } from 'react'
-
 
 const navItems = [
     {
@@ -33,11 +31,9 @@ const navItems = [
 
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
     }
-
     const closeNavbar = () => {
         setOpenNavbar(false)
     }
@@ -118,5 +114,4 @@ const Navbar = () => {
         </>
     )
 }
-
 export default Navbar

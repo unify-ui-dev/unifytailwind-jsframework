@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import "./component.css"
-
 
 const navItems = [
     {
@@ -27,7 +25,6 @@ const navItems = [
 
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
     }
@@ -78,8 +75,6 @@ const Navbar = () => {
         </header>
     )
 }
-
-
 export default function HeroSection() {
     return (
         <>

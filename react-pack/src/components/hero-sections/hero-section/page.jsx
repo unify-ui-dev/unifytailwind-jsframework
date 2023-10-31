@@ -1,16 +1,9 @@
 import { useState } from 'react'
-import "./component.css"
-
 
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
-    }
-
-    const closeNavbar = () => {
-        setOpenNavbar(false)
     }
     return (
         <header className="absolute left-0 top-0 w-full flex items-center h-24 z-40">

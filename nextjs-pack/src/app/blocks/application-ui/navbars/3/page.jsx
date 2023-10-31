@@ -1,12 +1,9 @@
 "use client"
-
 import Link from 'next/link'
 import { useState } from 'react'
 
-
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
     }
@@ -88,5 +85,4 @@ const Navbar = () => {
         </header>
     )
 }
-
 export default Navbar

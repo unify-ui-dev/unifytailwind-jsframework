@@ -1,5 +1,3 @@
-import "./component.css"
-
 const ContentSection = () => {
     return (
         <section className="py-24">
@@ -41,5 +39,4 @@ const ContentSection = () => {
         </section>
     )
 }
-
 export default ContentSection

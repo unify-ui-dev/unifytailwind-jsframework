@@ -23,7 +23,6 @@ const BlogCard = ({ cover, published_at, author, title, sumary }) => {
         </div>
     )
 }
-
 const posts = [
     {
         id: 1,
@@ -103,8 +102,6 @@ const posts = [
         sumary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error magni ipsam earum "
     },
 ]
-
-
 const BlogSection = () => {
     return (
         <section className="py-20">
@@ -137,5 +134,4 @@ const BlogSection = () => {
 
     )
 }
-
 export default BlogSection

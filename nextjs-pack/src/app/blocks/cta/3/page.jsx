@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 const CtaSection = () => {
     return (
         <section className="py-24">

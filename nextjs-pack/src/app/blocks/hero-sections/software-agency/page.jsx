@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
-
 const navItems = [
     {
         id: 1,
@@ -31,10 +30,8 @@ const navItems = [
         link: "#"
     },
 ]
-
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
     }
@@ -86,7 +83,6 @@ const Navbar = () => {
         </header>
     )
 }
-
 
 export default function HeroSection() {
     return (

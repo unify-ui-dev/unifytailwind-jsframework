@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 const CtaSection = () => {
     return (
         <section className="py-24">
@@ -24,8 +23,6 @@ const CtaSection = () => {
                 </div>
             </div>
         </section>
-
     )
 }
-
 export default CtaSection

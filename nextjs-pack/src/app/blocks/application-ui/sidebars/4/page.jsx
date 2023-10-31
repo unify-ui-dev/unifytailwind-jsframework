@@ -2,9 +2,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
-
 const Sidebar = () => {
-
     const [sidebarToggled, setSidebarToggled] = useState(false)
     const toggleSidebar = () => {
         setSidebarToggled(sidebarToggled => !sidebarToggled)
@@ -101,5 +99,4 @@ const Sidebar = () => {
         </>
     )
 }
-
 export default Sidebar

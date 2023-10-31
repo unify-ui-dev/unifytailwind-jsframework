@@ -1,17 +1,12 @@
 "use client"
-
 import Link from 'next/link'
 import { useState } from 'react'
 
-
 const Sidebar = () => {
-
     const [sidebarToggled, setSidebarToggled] = useState(false)
-
     const toggleSidebar = () => {
         setSidebarToggled(sidebarToggled => !sidebarToggled)
     }
-
     return (
         <>
             <aside className={`
@@ -116,7 +111,6 @@ const Sidebar = () => {
                     </nav>
                 </div>
             </aside>
-
             <main>
                 <div className="flex lg:hidden fixed right-2 top-2 p-4">
                     <button onClick={() => { toggleSidebar() }} className="p-3 rounded-full bg-blue-600 dark:bg-blue-500 outline-none w-12 aspect-square flex flex-col relative justify-center items-center">
@@ -141,5 +135,4 @@ const Sidebar = () => {
         </>
     )
 }
-
 export default Sidebar

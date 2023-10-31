@@ -1,4 +1,3 @@
-import "./component.css"
 
 const ServiceCard = ({ title, description, icon }) => {
     return (

@@ -1,8 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-
-
 const BlogCard = ({ cover, title, sumary, author, published_at }) => {
     return (
         <div className="flex flex-col lg:flex-row gap-8 p-5 rounded-md bg-gray-100 dark:bg-gray-900 border border-gray-200/70 dark:border-gray-800/80 ">
@@ -109,9 +107,6 @@ const posts = [
         sumary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error magni ipsam earum "
     },
 ]
-
-
-
 const BlogSection = () => {
     return (
         <section className="py-20">
@@ -140,5 +135,4 @@ const BlogSection = () => {
         </section>
     )
 }
-
 export default BlogSection

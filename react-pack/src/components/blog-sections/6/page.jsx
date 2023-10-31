@@ -1,7 +1,3 @@
-import "./component.css"
-
-
-
 const BlogCard = ({ cover, title, sumary, tags }) => {
     return (
         <a href="#" className="bg-white h-full dark:bg-gray-900 border border-gray-600 dark:border-gray-800 flex flex-col p-6 space-y-4">
@@ -64,7 +60,6 @@ const posts = [
     },
 ]
 
-
 const BlogSection = () => {
     return (
         <section className="py-20">
@@ -98,5 +93,4 @@ const BlogSection = () => {
         </section>
     )
 }
-
 export default BlogSection

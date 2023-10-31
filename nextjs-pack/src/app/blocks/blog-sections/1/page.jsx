@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-
 const BlogCard = ({ cover, published_date, category, author, title }) => {
     return (
         <div className="bg-white dark:bg-gray-950 shadow-lg shadow-gray-200/50 dark:shadow-transparent border border-gray-200/50 dark:border-gray-800/50">
@@ -62,7 +61,6 @@ const posts = [
     },
 ]
 
-
 const BlogSection = () => {
     return (
         <section className="py-20">
@@ -92,5 +90,4 @@ const BlogSection = () => {
         </section>
     )
 }
-
 export default BlogSection

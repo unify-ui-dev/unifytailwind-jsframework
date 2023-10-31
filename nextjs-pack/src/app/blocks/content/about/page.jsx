@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-
 const ContentSection = () => {
     return (
         <section className="py-24">

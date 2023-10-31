@@ -1,4 +1,3 @@
-import "./component.css"
 
 
 const LogoItem = ({ logo, name }) => {

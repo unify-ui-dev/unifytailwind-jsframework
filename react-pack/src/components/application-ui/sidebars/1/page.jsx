@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import "./component.css"
-
 
 const navItems = [
     {
@@ -18,20 +16,15 @@ const navItems = [
         isActive: false,
     },
 ]
-
 const Sidebar = () => {
-
     const [sidebarToggled, setSidebarToggled] = useState(false)
     const [sidebarResized, setSidebarResized] = useState(false)
-
     const toggleSidebar = () => {
         setSidebarToggled(sidebarToggled => !sidebarToggled)
     }
-
     const resizeSidebar = () => {
         setSidebarResized(sidebarResized => !sidebarResized)
     }
-
     return (
         <>
             <aside className={`
@@ -110,5 +103,4 @@ const Sidebar = () => {
         </>
     )
 }
-
 export default Sidebar

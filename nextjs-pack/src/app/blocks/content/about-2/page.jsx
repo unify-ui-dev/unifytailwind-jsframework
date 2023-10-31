@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-
 const ContentSection = () => {
     return (
         <section className="py-24">
@@ -40,5 +39,4 @@ const ContentSection = () => {
         </section>
     )
 }
-
 export default ContentSection

@@ -1,7 +1,3 @@
-import "./component.css"
-
-
-
 const BlogCard = ({ cover, published_at, author, title, sumary }) => {
     return (
         <div className="flex flex-col space-y-5">
@@ -104,8 +100,6 @@ const posts = [
         sumary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error magni ipsam earum "
     },
 ]
-
-
 const BlogSection = () => {
     return (
         <section className="py-20">
@@ -138,5 +132,4 @@ const BlogSection = () => {
 
     )
 }
-
 export default BlogSection

@@ -1,7 +1,3 @@
-import "./component.css"
-
-
-
 const BlogCard = ({ cover, published_date, author, title, sumary }) => {
     return (
         <div className="rounded-md flex flex-col bg-white dark:bg-gray-950 shadow-lg shadow-gray-200/60 dark:shadow-none border border-gray-200/70 dark:border-gray-800/80 p-4">
@@ -120,5 +116,4 @@ const BlogSection = () => {
         </section>
     )
 }
-
 export default BlogSection

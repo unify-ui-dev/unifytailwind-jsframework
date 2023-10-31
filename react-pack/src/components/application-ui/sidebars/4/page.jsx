@@ -1,15 +1,10 @@
 import { useState } from 'react'
-import "./component.css"
-
 
 const Sidebar = () => {
-
     const [sidebarToggled, setSidebarToggled] = useState(false)
-
     const toggleSidebar = () => {
         setSidebarToggled(sidebarToggled => !sidebarToggled)
     }
-
     return (
         <>
             <aside data-sidebar className="fixed h-[100dvh] py-3 overflow-hidden lg:static w-11/12 max-w-[18rem] md:w-72 transition-all -translate-x-full lg:-translate-x-0 bg-white dark:bg-gray-950 shadow-lg shadow-gray-200/40 dark:shadow-gray-800/10 flex flex-col justify-between px-4 lg:transition-none ease-linear ">
@@ -102,5 +97,4 @@ const Sidebar = () => {
         </>
     )
 }
-
 export default Sidebar

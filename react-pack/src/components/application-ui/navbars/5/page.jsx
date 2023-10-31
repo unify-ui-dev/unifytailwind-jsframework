@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import "./component.css"
 
 const navItems = [
     {
@@ -28,10 +27,8 @@ const navItems = [
         link: "#"
     },
 ]
-
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
     }
@@ -83,5 +80,4 @@ const Navbar = () => {
         </header>
     )
 }
-
 export { Navbar }

@@ -91,5 +91,4 @@ const BlogSection = () => {
         </section>
     )
 }
-
 export default BlogSection

@@ -8,7 +8,6 @@ const Navbar = () => {
   const closeNavbar = () => {
     setNavIsOpened(false)
   }
-
   const toggleNavbar = () => {
     setNavIsOpened(navIsOpened => !navIsOpened)
   }

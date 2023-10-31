@@ -1,4 +1,0 @@
-body{
-    font-family: "Raleway", sans-serif;
-    @apply bg-white dark:bg-gray-950 overflow-x-hidden overflow-y-auto lg:overflow-y-auto
-}

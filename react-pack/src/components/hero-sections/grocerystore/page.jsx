@@ -1,14 +1,10 @@
 import { useState } from 'react'
-import "./component.css"
-
 
 const Navbar = () => {
     const [openNavbar, setOpenNavbar] = useState(false)
-
     const toggleNavbar = () => {
         setOpenNavbar(openNavbar => !openNavbar)
     }
-
     const closeNavbar = () => {
         setOpenNavbar(false)
     }
@@ -91,7 +87,6 @@ const Navbar = () => {
         </>
     )
 }
-
 const FeatureItem = ({ text }) => {
     return (
         <div className="text-gray-700 dark:text-gray-300 flex gap-x-3">
@@ -102,7 +97,6 @@ const FeatureItem = ({ text }) => {
         </div>
     )
 }
-
 const CategoryCard = ({ icon, title, description }) => {
     return (
         <div className="space-y-2 sm:p-4 sm:rounded-md sm:bg-emerald-200/10 sm:dark:bg-gray-800/10">

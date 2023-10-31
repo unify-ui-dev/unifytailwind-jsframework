@@ -1,7 +1,3 @@
-import "./component.css"
-
-
-
 const BlogCard = ({ cover, published_at,  title, sumary }) => {
     return (
         <a href="#" className="flex p-px flex-col bg-gray-100 dark:bg-gray-900 group border border-gray-200 dark:border-gray-800 rounded-lg">
@@ -40,7 +36,6 @@ const posts = [
         sumary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius error magni ipsam earum "
     },
 ]
-
 
 const BlogSection = () => {
     return (
@@ -92,5 +87,4 @@ const BlogSection = () => {
         </section>
     )
 }
-
 export default BlogSection

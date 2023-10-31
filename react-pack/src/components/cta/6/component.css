@@ -1,4 +1,0 @@
-body{
-    font-family: "DM Sans", sans-serif;
-    @apply bg-gray-100 dark:bg-gray-900 overflow-x-hidden overflow-y-auto lg:overflow-y-auto
-}

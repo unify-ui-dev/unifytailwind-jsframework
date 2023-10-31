@@ -1,5 +1,3 @@
-import "./component.css"
-
 const CtaSection = () => {
     return (
         <section className="py-24">
@@ -23,8 +21,6 @@ const CtaSection = () => {
                 </div>
             </div>
         </section>
-
     )
 }
-
 export default CtaSection

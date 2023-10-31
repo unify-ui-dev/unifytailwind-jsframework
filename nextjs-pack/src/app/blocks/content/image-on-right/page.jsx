@@ -41,5 +41,4 @@ const ContentSection = () => {
         </section>
     )
 }
-
 export default ContentSection
