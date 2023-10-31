@@ -1,0 +1,5 @@
+export { default as PricingSection1 } from "./1/page"
+export { default as PricingSection2 } from "./2/page"
+export { default as PricingSection3 } from "./3/page"
+export { default as PricingSection4 } from "./4/page"
+export { default as PricingSection5 } from "./5/page"

@@ -2,10 +2,20 @@ import { Outlet } from "react-router-dom";
 import { AppProvider } from "./context/theme";
 
 
-export default function Layout() {
+const Layout = ()=> {
   return (
     <AppProvider>
         <Outlet/>
     </AppProvider>
   )
 }
+
+const GeneralLayout = () =>{
+  return (
+    <>
+      <Outlet/>
+    </>
+  )
+}
+
+export { Layout, GeneralLayout }

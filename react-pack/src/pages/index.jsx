@@ -1,5 +1,6 @@
 import SwitchTheme from "../components/switchTheme"
 import { blocGroups } from "../data/blocks"
+import "./page.css"
 
 export default function Home() {
     return (

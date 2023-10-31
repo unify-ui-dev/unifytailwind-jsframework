@@ -1,0 +1,8 @@
+export { default as BlogSection1 } from "./1/page"
+export { default as BlogSection2 } from "./2/page"
+export { default as BlogSection3 } from "./3/page"
+export { default as BlogSection4 } from "./4/page"
+export { default as BlogSection5 } from "./5/page"
+export { default as BlogSection6 } from "./6/page"
+export { default as BlogSection7 } from "./7/page"
+export { default as BlogSection8 } from "./8/page"
