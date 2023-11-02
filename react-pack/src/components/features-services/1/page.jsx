@@ -1,5 +1,3 @@
-
-
 const iconRender = (val) => {
     switch (val) {
         case "task":
@@ -25,7 +23,6 @@ const iconRender = (val) => {
             return <>No Icon</>;
     }
 }
-
 
 const FeatureItem = ({ title, description, icon }) => {
     return (
@@ -68,7 +65,6 @@ const features = [
         icon: "fire"
     },
 ]
-
 const Features = () => {
     return (
         <section className="py-20">
@@ -97,5 +93,4 @@ const Features = () => {
         </section>
     )
 }
-
 export default Features

@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 const iconRender = (val) => {
     switch (val) {
         case "task":
