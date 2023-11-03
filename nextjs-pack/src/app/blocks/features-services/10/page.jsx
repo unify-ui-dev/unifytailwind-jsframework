@@ -1,7 +1,5 @@
 import Image from "next/image"
 
-
-
 const Features = () => {
     return (
         <section className="py-20">

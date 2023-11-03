@@ -1,5 +1,3 @@
-
-
 const LogoItem = ({ logo, name }) => {
     return (
         <a href="#" target="_blank" className="bg-gray-100/80 dark:bg-gray-900/80 p-4 rounded-lg border-gray-100 dark:border-gray-900">

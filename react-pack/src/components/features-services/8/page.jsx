@@ -1,5 +1,3 @@
-
-
 const iconRender = (val) => {
     switch (val) {
         case "default-ico":
@@ -12,7 +10,6 @@ const iconRender = (val) => {
             return <>No Icon</>;
     }
 }
-
 
 const FeatureCard = ({ title, description, icon }) => {
     return (

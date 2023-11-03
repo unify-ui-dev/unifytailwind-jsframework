@@ -1,5 +1,4 @@
-
-
+import Image from "next/image"
 
 const Features = () => {
     return (
@@ -50,7 +49,7 @@ const Features = () => {
                         <div className="flex items-center justify-center order-3 md:col-span-2 lg:order-2 lg:row-span-2 lg:h-full">
                             <div className="flex-1 relative bg-gradient-to-tr from-sky-100 to-indigo-300 
                       p-6 rounded-lg aspect-[4/2.4] overflow-hidden">
-                                <img src="/images/dash-light.webp" alt="illustration" width={1800} className="wfull hauto" />
+                                <Image src="/images/dash-light.webp" alt="illustration" height={1100} width={1800} className="wfull hauto" />
                             </div>
                         </div>
                         <div className="order-1 grid gap-10 sm:grid-cols-2 md:order-2 md:grid-cols-1 lg:order-3">

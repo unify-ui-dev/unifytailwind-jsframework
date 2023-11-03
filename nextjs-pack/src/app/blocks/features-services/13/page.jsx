@@ -11,7 +11,6 @@ const iconRender = (val) => {
     }
 }
 
-
 const ServiceCard = ({ title, description, icon }) => {
     return (
         <div className="flex flex-col p-5 xl:p-7 space-y-3 bg-white dark:bg-gray-950  ">

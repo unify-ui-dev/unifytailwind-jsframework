@@ -7,7 +7,6 @@ const LogoItem = ({ logo, name }) => {
         </div>
     )
 }
-
 const logos = [
     {
         id: 1,
@@ -35,7 +34,6 @@ const logos = [
         name:"Spotify"
     },
 ]
-
 const LogoCloudSection = () => {
     return (
         <section className="py-20">
@@ -56,5 +54,4 @@ const LogoCloudSection = () => {
         </section>
     )
 }
-
 export default LogoCloudSection

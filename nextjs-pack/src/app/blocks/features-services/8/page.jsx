@@ -1,6 +1,3 @@
-
-
-
 const iconRender = (val) => {
     switch (val) {
         case "default-ico":

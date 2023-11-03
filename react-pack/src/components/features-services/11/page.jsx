@@ -1,5 +1,3 @@
-
-
 const iconRender = (val) => {
     switch (val) {
         case "stat-ico":
@@ -12,7 +10,6 @@ const iconRender = (val) => {
             return <>No Icon</>;
     }
 }
-
 
 const FeatureItem = ({ title, description, icon, id }) => {
     return (
@@ -108,5 +105,4 @@ const Features = () => {
         </section>
     )
 }
-
 export default Features
