@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-
 const LogoCloudSection = () => {
     return (
         <section className="py-20">

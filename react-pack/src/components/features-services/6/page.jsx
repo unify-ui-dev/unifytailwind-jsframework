@@ -1,4 +1,3 @@
-
 const ServiceCard = ({ title, description, icon }) => {
     return (
         <div className="rounded-lg h-auto flex flex-col p-6 md:p-8 bg-gray-100 dark:bg-gray-900">

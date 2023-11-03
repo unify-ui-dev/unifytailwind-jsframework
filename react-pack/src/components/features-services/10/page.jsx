@@ -1,5 +1,3 @@
-
-
 const Features = () => {
     return (
         <section className="py-20">

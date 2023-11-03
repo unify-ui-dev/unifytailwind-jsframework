@@ -1,5 +1,3 @@
-
-
 const iconRender = (val) => {
     switch (val) {
         case "send":

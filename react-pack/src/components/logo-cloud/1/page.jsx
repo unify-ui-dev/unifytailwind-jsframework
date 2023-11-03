@@ -1,5 +1,3 @@
-
-
 const LogoItem = ({ logo, name }) => {
     return (
         <div className="p-4 sm:p-5 rounded-lg border border-gray-100 dark:border-gray-900 group">

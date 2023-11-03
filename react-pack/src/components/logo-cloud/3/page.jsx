@@ -1,4 +1,3 @@
-
 const LogoCloudSection = () => {
     return (
         <section className="py-20">

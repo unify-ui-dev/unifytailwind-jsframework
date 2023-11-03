@@ -58,5 +58,4 @@ const LogoCloudSection = () => {
         </section>
     )
 }
-
 export default LogoCloudSection
