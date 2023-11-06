@@ -1,4 +1,3 @@
-
 const MetricsSection = () => {
     return (
         <section className="py-10 bg-gray-50 dark:bg-gray-900">

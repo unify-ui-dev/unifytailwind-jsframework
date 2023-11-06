@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-
 const MetricsSection = () => {
     return (
         <section className="py-24">

@@ -1,6 +1,3 @@
-
-
-
 const MetricsSection = () => {
     return (
         <section className="py-24">

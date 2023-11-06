@@ -1,4 +1,3 @@
-
 const PricingSection = () => {
     return (
         <section className="py-20">

@@ -1,5 +1,3 @@
-
-
 const TestimonialSection = () => {
     return (
         <section className="py-20">
@@ -61,6 +59,4 @@ const TestimonialSection = () => {
         </section>
     )
 }
-
-
 export default TestimonialSection

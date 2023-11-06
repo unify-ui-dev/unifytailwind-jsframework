@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const PricingSection = () => {
     return (
         <section className="py-20">
@@ -12,9 +14,9 @@ const PricingSection = () => {
                         </p>
                     </div>
                     <div className>
-                        <a href="#" className="h-12 flex items-center w-max px-5 rounded-lg bg-emerald-700 dark:bg-emerald-600 text-white transition ease-linear hover:bg-opacity-80">
+                        <Link href="#" className="h-12 flex items-center w-max px-5 rounded-lg bg-emerald-700 dark:bg-emerald-600 text-white transition ease-linear hover:bg-opacity-80">
                             Get Started now
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10 pt-6">

@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 const PricingSection = () => {
     return (
         <section className="py-20">
